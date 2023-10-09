@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkTurn(arr) {
+            let arr1 = arr.split("");
+            let arr2 = [...new Set(arr1)]
+            console.log(arr2);
+            for (let i = 0; i < arr2.length; i++) {
+                let turn = 0
+                for (let j = 0; j < arr1.length; j++) {
+                    if (arr2[i] == arr1[j]) {
+                        turn++
+                    }
+
+                }
+                console.log(`${arr2[i]} xuất hiện ${turn} lần`);
+            }
+        }
+        let a = "hello world"
+        checkTurn(a)
+    </script>
+</body>
+
+</html>

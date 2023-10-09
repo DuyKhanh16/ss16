@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+       let arr=[];
+       for (let i = 0; i < 3; i++) {
+            while (a%1!=0) {
+                let a=+prompt("nhập số nguyên")
+            }
+            arr[i]=a
+       }
+       function timMin(x) {
+        let min;
+        for (let i = 0; i < x.length; i++) {
+          if(x[i]<x[i+1]){
+            min=x[i]
+          }
+        }
+        return min;
+       }
+       console.log(timMin(arr));
+    </script>
+</body>
+</html>
